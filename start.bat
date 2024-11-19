@@ -9,4 +9,4 @@ start "Zapret" /min "%CD%\zapret.exe" ^
 --filter-tcp=80 --hostlist=%BLACKLIST% --dpi-desync=fake,split2 --dpi-desync-autottl=2 --dpi-desync-fooling=md5sig --new ^
 --filter-tcp=443 --hostlist=%BLACKLIST% --dpi-desync=fake,split --dpi-desync-autottl=2 --dpi-desync-repeats=6 --dpi-desync-fooling=badseq --dpi-desync-fake-tls="%CD%\tls.bin"
 
-rundll32 url.dll,FileProtocolHandler https://www.youtube.com/feed/subscriptions/
+rundll32 url.dll,FileProtocolHandler https://www.youtube.com/
